@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="recursos/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300; 400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
 
 <body>
     <header>
@@ -48,6 +49,9 @@
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-youtube"></i></a>
                     </div>
+                </div>
+                <div class="nav-bar">
+                    <i class="fa-solid fa-bars-staggered"></i>
                 </div>
             </div>
         </div>

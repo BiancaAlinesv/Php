@@ -13,28 +13,40 @@ header .conteudo .logo{
 }
 
 header .conteudo .menu-lateral{
-    width: calc(100% - 245px);
+    position: absolute;
+    left: calc(-100vw - -100px);
+    top: 0px;
+    width: calc(100vw - 100px);
+    height: 100vh;
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(39, 39, 39)
+    transition .4s;
+}
+
+header .conteudo .menu-lateral.active{
+    left: 0px;
 }
 
 header .conteudo .menu-lateral .nav{
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
 }
 
 header .conteudo .menu-lateral .nav li{
-    margin-left: 90px;
+    margin-left: 0px;
     position: relative;
+    padding: 10px 0px;
+    width: 100%;
 }
 
-header .conteudo .menu-lateral .nav li:first-child{
-    margin-left: 0px;
-}
 
 header .conteudo .menu-lateral .nav li::after{
     position: absolute; 
-    bottom: -10px;
+    bottom: 0px;
     left: 0px;
     width: 0%;
     height: 3px;
@@ -49,13 +61,67 @@ header .conteudo .menu-lateral .nav li:hover:after{
 }
 
 header .conteudo .menu-lateral .redes-sociais{
-    width: max-content;
-    margin-left: 80px;
+    width: 100%;
+    align-items: center;
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 header .conteudo .menu-lateral .redes-sociais a{
     margin-left: 15px;
+}
+
+header .conteudo .nav-bar{
+    width: 40px;
+    height: 40px;
+}
+
+header .conteudo .nav-bar i{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px){
+    header .conteudo .nav-bar{
+        display: none;
+    }
+    header .conteudo .menu-lateral{
+    width: calc(100% - 245px);
+    display: inline-flex;
+    justify-content: flex-end;
+    position: relative;
+    background-color: transparent;  
+    flex-direction: row;
+    height: auto;
+    left: initial;
+    top: initial;
+    
+    }
+    header .conteudo .menu-lateral .nav{
+        flex-direction: row;
+        padding: 20px;
+
+    }
+    header .conteudo .menu-lateral .nav li{
+    margin-left: 30px;
+    position: relative;
+    width: max-content;
+    }
+    header .conteudo .menu-lateral .nav li:first-child{
+    margin-left: 0px;
+    }
+    header .conteudo .menu-lateral .redes-sociais{
+        margin-left: 40px;
+        width: max-content;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    header .conteudo .menu-lateral .nav li{
+    margin-left: 90px;
+    }
+    header .conteudo .menu-lateral .redes-sociais{
+        margin-left: 40px;  
+    }
 }
     
