@@ -14,15 +14,15 @@ header .conteudo .logo{
 
 header .conteudo .menu-lateral{
     position: absolute;
-    left: calc(-100vw - -100px);
+    left: -100%;
     top: 0px;
     width: calc(100vw - 100px);
     height: 100vh;
     display: inline-flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgb(39, 39, 39)
-    transition .4s;
+    background-color: #1c1c16;
+    transition: 0.4s;
 }
 
 header .conteudo .menu-lateral.active{
@@ -52,7 +52,7 @@ header .conteudo .menu-lateral .nav li::after{
     height: 3px;
     background-color: white;
     content: "";
-    transition: 0.4s;
+    transition: .4s;
 
 }
 
@@ -69,6 +69,10 @@ header .conteudo .menu-lateral .redes-sociais{
 
 header .conteudo .menu-lateral .redes-sociais a{
     margin-left: 15px;
+}
+
+header .conteudo .menu-lateral .redes-sociais a i{
+    font-size: 20px;
 }
 
 header .conteudo .nav-bar{
@@ -99,7 +103,7 @@ header .conteudo .nav-bar i{
     }
     header .conteudo .menu-lateral .nav{
         flex-direction: row;
-        padding: 20px;
+        padding: 0px;
 
     }
     header .conteudo .menu-lateral .nav li{
@@ -111,7 +115,7 @@ header .conteudo .nav-bar i{
     margin-left: 0px;
     }
     header .conteudo .menu-lateral .redes-sociais{
-        margin-left: 40px;
+        margin-left: 35px;
         width: max-content;
     }
 }

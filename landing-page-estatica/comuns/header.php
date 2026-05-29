@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300; 400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="recursos/js/script.js" ></script>
 
 <body>
     <header>
